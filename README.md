@@ -8,14 +8,13 @@ This web site shows NBA teams information including :
 
 •	Current Team Roster.
 
-•	Current team pay roll.
+•	Current Team Payroll.
 
-•	Players individual stats.  
-
+•	Players Individual Stats. 
 
 The project was written in php.
 
-The NBA teams and players data was scrapped by an external library (simple_html_dom) and stored in a MySql data base. 
+The NBA teams and players data was scrapped by an external library (simple_html_dom) and stored in a MySQL database. 
 
 The web server platform was build with the Slim API framework.
 
