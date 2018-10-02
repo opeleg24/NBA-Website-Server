@@ -14,7 +14,12 @@ This web site shows NBA teams information including :
 
 # Built With
 
-• The project was written in php.
+• php - The server scripting language used.
+
+• [simple_html_dom](http://simplehtmldom.sourceforge.net/)- The external library used to scrap The NBA teams and players data.
+
+• php - The project was written in php.
+
 
 
 The NBA teams and players data was scrapped by an external library (simple_html_dom) and stored in a MySQL database. 
