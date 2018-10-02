@@ -14,21 +14,22 @@ This web site shows NBA teams information including :
 
 # Built With
 
-• php - The server scripting language used
+• PHP - The server scripting language used
 
 • MySQL - The database management system used
 
-• [simple_html_dom](http://simplehtmldom.sourceforge.net/) - External web harvesting library used to scrap The NBA teams and players data
+• Slim- The web server framework used to built the API request sysytem
 
-• [Slim](https://www.slimframework.com/) - The web server framework used to built the API request sysytem
+• simple_html_dom - External web harvesting library used to scrap The NBA teams and players data
 
 
 # Acknowledgements
 
 The NBA Web Site uses the following open source software:
 
-• simple_html_dom
 
-• Slim
+• [Slim](https://www.slimframework.com/) - PHP micro framework for handling API requests
+
+• [simple_html_dom](http://simplehtmldom.sourceforge.net/) - PHP web scrapping library
 
 
