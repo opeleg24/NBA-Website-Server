@@ -16,9 +16,9 @@ This web site shows NBA teams information including :
 
 • PHP - The server scripting language used
 
-• MySQL - The database management system used
+• MySQL - The database management system used to store The NBA teams and players data
 
-• Slim- The web server framework used to built the API request sysytem
+• Slim - The web server framework used to built the API request sysytem
 
 • simple_html_dom - External web harvesting library used to scrap The NBA teams and players data
 
