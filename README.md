@@ -1,8 +1,8 @@
-# NBA Web Site
-NBA Web Site - http://nbawebsite.opeleg90.com/public_html/#!/#%2F!
+# NBA Website
+NBA Website - http://nbawebsite.opeleg90.com/public_html/#!/#%2F!
 
 
-This web site shows NBA teams information including :
+This NBA website shows NBA teams information including :
 
 •	Teams Franchise Index
 
@@ -25,7 +25,7 @@ This web site shows NBA teams information including :
 
 # Acknowledgements
 
-The NBA Web Site uses the following open source software:
+This project uses the following open source software:
 
 
 • [Slim](https://www.slimframework.com/) - PHP micro framework for handling API requests
