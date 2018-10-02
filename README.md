@@ -23,6 +23,12 @@ This web site shows NBA teams information including :
 • [Slim](https://www.slimframework.com/) - The web server framework used to built the API request sysytem
 
 
+# Acknowledgements
 
+The NBA Web Site uses the following open source software:
+
+• simple_html_dom
+
+• Slim
 
 
