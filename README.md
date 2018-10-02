@@ -4,7 +4,7 @@ NBA Website - http://nbawebsite.opeleg90.com/public_html/#!/#%2F!
 
 This NBA website shows NBA teams information including :
 
-•	Teams Franchise Index
+•	Team Franchise Index
 
 •	Current Team Roster
 
