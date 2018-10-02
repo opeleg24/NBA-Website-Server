@@ -18,7 +18,7 @@ This web site shows NBA teams information including :
 
 • MySQL - The database management system used.
 
-• [simple_html_dom](http://simplehtmldom.sourceforge.net/) - The external library used to scrap The NBA teams and players data.
+• [simple_html_dom](http://simplehtmldom.sourceforge.net/) - External web harvesting library used to scrap The NBA teams and players data.
 
 • [Slim](https://www.slimframework.com/) - The web server framework used to built the API request sysytem.
 
