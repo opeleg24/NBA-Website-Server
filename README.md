@@ -16,9 +16,11 @@ This web site shows NBA teams information including :
 
 • php - The server scripting language used.
 
-• [simple_html_dom](http://simplehtmldom.sourceforge.net/)- The external library used to scrap The NBA teams and players data.
+• MySQL - The database management system used.
 
-• [Slim](https://www.slimframework.com/)- The web server platform used to built the API request sysytem .
+• [simple_html_dom](http://simplehtmldom.sourceforge.net/) - The external library used to scrap The NBA teams and players data.
+
+• [Slim](https://www.slimframework.com/) - The web server platform used to built the API request sysytem .
 
 
 
