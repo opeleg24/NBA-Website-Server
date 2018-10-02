@@ -20,7 +20,7 @@ This web site shows NBA teams information including :
 
 • [simple_html_dom](http://simplehtmldom.sourceforge.net/) - The external library used to scrap The NBA teams and players data.
 
-• [Slim](https://www.slimframework.com/) - The web server platform used to built the API request sysytem .
+• [Slim](https://www.slimframework.com/) - The web server framework used to built the API request sysytem.
 
 
 
