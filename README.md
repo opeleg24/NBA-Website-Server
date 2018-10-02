@@ -20,7 +20,7 @@ This NBA website shows NBA teams information including:
 
 • Slim - The web server framework used to built the API request sysytem
 
-• simple_html_dom - External web harvesting library used to scrap The NBA teams and players data
+• simple_html_dom - External web harvesting library used to scrape The NBA teams and players data
 
 
 # Acknowledgements
