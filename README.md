@@ -13,7 +13,7 @@ This web site shows NBA teams information including :
 •	Players individual stats.  
 
 
-The project was written in php
+The project was written in php.
 
 The NBA teams and players data was scrapped by an external library (simple_html_dom) and stored in a MySql data base. 
 
