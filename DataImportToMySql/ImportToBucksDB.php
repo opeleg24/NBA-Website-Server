@@ -1,5 +1,5 @@
 <?php
-//Data is scrapped with a coron job scheduling tasks commend  
+
 include 'simple_html_dom.php';
 //1.import team data
 function ImportTeamDataAndInsertIntoMysql(){
@@ -1299,7 +1299,7 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
-function ImportPlayersSeasonStatsAndInsertIntoMysqlDB(){
+function ImportBucksPlayersSeasonStatsAndInsertIntoMysqlDB(){
 	
 
 	try {
@@ -1346,22 +1346,27 @@ catch(Exception $e) {
 }
 	
 }
+   //2.ImportToBucksDB
+
 //1.Team Data
 //
-ImportTeamDataAndInsertIntoMysql();
-usleep(mt_rand(15000000,30000000));
+ImportBucksTeamDataAndInsertIntoMysql();
+
 //
-//2.Team New Roster(basketball-reference not fox)
+//2.Team New Roster
 //
-//ImportNewTeamRosterAndInsertIntoMysql();
+
+ImportBucksNewTeamRosterAndInsertIntoMysql();
 //
 //3.Team PayRoll
 //
-//ImportTeamPayRollAndInsertIntoMysql();
+
+ImportBucksTeamPayRollAndInsertIntoMysql();
 
 //4.IMPORT PLAYERS TO  players_season_pergame
 
-ImportPlayersSeasonStatsAndInsertIntoMysqlDB();
+ImportBucksPlayersSeasonStatsAndInsertIntoMysqlDB();
+
 
 
 
