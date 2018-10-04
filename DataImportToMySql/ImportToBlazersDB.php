@@ -1,5 +1,5 @@
 <?php
-//Data is scrapped with a coron job scheduling tasks commend  
+
 include 'simple_html_dom.php';
 //1.import team data
 function ImportBlazersTeamDataAndInsertIntoMysql(){
@@ -1211,6 +1211,25 @@ catch(Exception $e) {
 	
 }
 
+//1.ImportToBlazersDB
 
+//1.Team Data
+//
+ImportBlazersTeamDataAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+//
+//2.Team New Roster
+//
+usleep(mt_rand(15000000,25000000));
+ImportBlazersNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+usleep(mt_rand(15000000,25000000));
+ImportBlazersTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+usleep(mt_rand(15000000,25000000));
+ImportBlazersPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 ?>
