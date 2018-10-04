@@ -1,5 +1,5 @@
 <?php
-//Data is scrapped with a coron job scheduling tasks commend 
+
 include 'simple_html_dom.php';
 //1.import team data
 function ImportTimberwolvesTeamDataAndInsertIntoMysql(){
@@ -1142,7 +1142,26 @@ catch(Exception $e) {
 	
 }
 
+//28.ImportTimberwolvesToDB
 
+//1.Team Data
+//
+ImportTimberwolvesTeamDataAndInsertIntoMysql();
+
+//
+//2.Team New Roster
+//
+
+ImportTimberwolvesNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+
+ImportTimberwolvesTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+
+ImportTimberwolvesPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 ?>
