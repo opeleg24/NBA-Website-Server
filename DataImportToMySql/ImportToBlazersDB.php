@@ -1167,7 +1167,7 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
-function ImportPlayersSeasonStatsAndInsertIntoMysqlDB(){
+function ImportBlazersPlayersSeasonStatsAndInsertIntoMysqlDB(){
 	
 
 	try {
