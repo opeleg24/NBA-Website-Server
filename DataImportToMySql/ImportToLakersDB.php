@@ -5,7 +5,7 @@ include 'simple_html_dom.php';
 function ImportTeamDataAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://www.basketball-reference.com/teams/LAL/");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('div#info') as $a){
     $teamdata = array();
 
@@ -13,10 +13,7 @@ foreach($html->find('div#info') as $a){
    $teamdata['TEAM NAMES']= substr(strip_tags($a->find('p')[3]->innertext),16);
    $teamdata['PLAYOFF APPERANCES']= substr(strip_tags($a->find('p')[6]->innertext),26);
    $teamdata['CHAMPIONSHIPS']=substr(strip_tags($a->find('p')[7]->innertext),20);
-//   FROM DIFFERENT URL TO GET 2017-18 RECORD
-//   could change the location of li so in that case there will be nothing in RECORD and the other tags 
-//   will be fine, even if a differnt url
-   $htmlTeamDataRecord = file_get_html("https://herosports.com/nba/team/los-angeles-lakers");
+//Site where data is scrapped:$html = file_get_html();
    $teamdata['2017-18 RECORD']=substr(strip_tags($htmlTeamDataRecord->find("div ul.team_recorddetail li")[0]->innertext),8);
         
 
@@ -49,7 +46,7 @@ foreach($Teamdata as $TeamdataRow){
 function ImportNewTeamRosterAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://www.basketball-reference.com/teams/LAL/2019.html");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#roster') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -104,7 +101,7 @@ foreach($ArrayNewroster as $ArrayNewRosterRow){
 function ImportTeamPayRollAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://www.basketball-reference.com/contracts/LAL.html");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#contracts') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -174,7 +171,7 @@ foreach($ArrayNewPayRoll as $ArrayNewPayRollRow){
 function ImportAlexCarusoSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/alex-caruso-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -240,7 +237,7 @@ foreach($ArrayNewRoster as $row){
 function ImportAndrewBogutSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/andrew-bogut-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -306,7 +303,7 @@ foreach($ArrayNewRoster as $row){
 function ImportBrandonIngramSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/brandon-ingram-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -372,7 +369,7 @@ foreach($ArrayNewRoster as $row){
 function ImportBrookLopezSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/brook-lopez-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -439,7 +436,7 @@ foreach($ArrayNewRoster as $row){
 function ImportChanningFryeSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/channing-frye-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -506,7 +503,7 @@ foreach($ArrayNewRoster as $row){
 function ImportGaryPaytonIISeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/gary-paytonii-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -572,7 +569,7 @@ foreach($ArrayNewRoster as $row){
 function ImportIsaiahThomasSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/isaiah-thomas-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -640,7 +637,7 @@ foreach($ArrayNewRoster as $row){
 function ImportIvicaZubacStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/ivica-zubac-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -707,7 +704,7 @@ foreach($ArrayNewRoster as $row){
 function ImportJoshHartSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/josh-hart-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -774,7 +771,7 @@ foreach($ArrayNewRoster as $row){
 function ImportJuliusRandleSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/julius-randle-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -841,7 +838,7 @@ foreach($ArrayNewRoster as $row){
 function ImportKentaviousCaldwellPopeSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/kentavious-caldwellpope-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -908,7 +905,7 @@ foreach($ArrayNewRoster as $row){
 function ImportKyleKuzmaSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/kyle-kuzma-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -975,7 +972,7 @@ foreach($ArrayNewRoster as $row){
 function ImportLonzoBallSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/lonzo-ball-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1041,7 +1038,7 @@ foreach($ArrayNewRoster as $row){
 function ImportLuolDengSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/luol-deng-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1107,7 +1104,7 @@ foreach($ArrayNewRoster as $row){
 function ImportThomasBryantSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/thomas-bryant-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1173,7 +1170,7 @@ foreach($ArrayNewRoster as $row){
 function ImportTravisWearSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/travis-wear-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1239,7 +1236,7 @@ foreach($ArrayNewRoster as $row){
 function ImportTylerEnnisSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/tyler-ennis-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1305,7 +1302,7 @@ foreach($ArrayNewRoster as $row){
 function ImportVanderBlueSeasonStatsAndInsertIntoMysql(){
 
 try {
-    $html = file_get_html("https://herosports.com/nba/player/vander-blue-stats");
+//Site where data is scrapped:$html = file_get_html();
 foreach($html->find('table#table3') as $ul){
     
     foreach($ul->find('tr') as $li){
@@ -1368,36 +1365,61 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
+function ImportLakersPlayersSeasonStatsAndInsertIntoMysqlDB(){
+	
+	ImportAlexCarusoSeasonStatsAndInsertIntoMysql();
+	usleep(mt_rand(15000000,25000000));
+ImportAndrewBogutSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportBrandonIngramSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportBrookLopezSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportChanningFryeSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportGaryPaytonIISeasonStatsAndInsertIntoMysql();
+\usleep(mt_rand(15000000,25000000));
+ImportIsaiahThomasSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportIvicaZubacStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportJoshHartSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportJuliusRandleSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportKentaviousCaldwellPopeSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportKyleKuzmaSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportLonzoBallSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportLuolDengSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportThomasBryantSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportTravisWearSeasonStatsAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportVanderBlueSeasonStatsAndInsertIntoMysql();
+	}
+//14.ImportLakersToDB
+
 //1.Team Data
 //
-//ImportTeamDataAndInsertIntoMysql();
+ImportLakersTeamDataAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
 //
-//2.Team New Roster(basketball-reference not fox)
+//2.Team New Roster
 //
-//ImportNewTeamRosterAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportLakersNewTeamRosterAndInsertIntoMysql();
 //
 //3.Team PayRoll
 //
-//ImportTeamPayRollAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+ImportLakersTeamPayRollAndInsertIntoMysql();
 
 //4.IMPORT PLAYERS TO  players_season_pergame
-//
+usleep(mt_rand(15000000,25000000));
+ImportLakersPlayersSeasonStatsAndInsertIntoMysqlDB();
 
-//ImportAlexCarusoSeasonStatsAndInsertIntoMysql();
-//ImportAndrewBogutSeasonStatsAndInsertIntoMysql();
-//ImportBrandonIngramSeasonStatsAndInsertIntoMysql();
-//ImportBrookLopezSeasonStatsAndInsertIntoMysql();
-//ImportChanningFryeSeasonStatsAndInsertIntoMysql();
-//ImportGaryPaytonIISeasonStatsAndInsertIntoMysql();
-//ImportIsaiahThomasSeasonStatsAndInsertIntoMysql();
-//ImportIvicaZubacStatsAndInsertIntoMysql();
-//ImportJoshHartSeasonStatsAndInsertIntoMysql();
-//ImportJuliusRandleSeasonStatsAndInsertIntoMysql();
-//ImportKentaviousCaldwellPopeSeasonStatsAndInsertIntoMysql();
-//ImportKyleKuzmaSeasonStatsAndInsertIntoMysql();
-//ImportLonzoBallSeasonStatsAndInsertIntoMysql();
-//ImportLuolDengSeasonStatsAndInsertIntoMysql();
-//ImportThomasBryantSeasonStatsAndInsertIntoMysql();
-//ImportTravisWearSeasonStatsAndInsertIntoMysql();
-//ImportVanderBlueSeasonStatsAndInsertIntoMysql();
 ?>
