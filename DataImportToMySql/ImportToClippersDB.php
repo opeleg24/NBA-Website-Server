@@ -1283,6 +1283,27 @@ catch(Exception $e) {
 	
 }
 
+//6.ImportClippersToDB
+
+//1.Team Data
+//
+ImportClippersTeamDataAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+//
+//2.Team New Roster
+//
+usleep(mt_rand(15000000,25000000));
+ImportClippersNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+usleep(mt_rand(15000000,25000000));
+ImportClippersTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+usleep(mt_rand(15000000,25000000));
+ImportClippersPlayersSeasonStatsAndInsertIntoMysqlDB();
+
 
 
 
