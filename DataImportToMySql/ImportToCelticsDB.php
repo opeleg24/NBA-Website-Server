@@ -1427,7 +1427,26 @@ catch(Exception $e) {
 }
 	
 }
+//5.ImportToCelticsDB
 
+//1.Team Data
+//
+ImportCelticsTeamDataAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+//
+//2.Team New Roster
+//
+usleep(mt_rand(15000000,25000000));
+ImportCelticsNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+usleep(mt_rand(15000000,25000000));
+ImportCelticsTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+usleep(mt_rand(15000000,25000000));
+ImportCelticsPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 ?>
