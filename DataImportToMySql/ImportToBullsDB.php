@@ -1309,7 +1309,7 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
-function ImportPlayersSeasonStatsAndInsertIntoMysqlDB(){
+function ImportBullsPlayersSeasonStatsAndInsertIntoMysqlDB(){
 	
 
 	try {
@@ -1358,20 +1358,20 @@ catch(Exception $e) {
 }
 //1.Team Data
 //
-ImportTeamDataAndInsertIntoMysql();
+ImportBullsTeamDataAndInsertIntoMysql();
 usleep(mt_rand(15000000,30000000));
 //
 //2.Team New Roster(basketball-reference not fox)
 //
-//ImportNewTeamRosterAndInsertIntoMysql();
+ImportBullsNewTeamRosterAndInsertIntoMysql();
 //
 //3.Team PayRoll
 //
-//ImportTeamPayRollAndInsertIntoMysql();
+ImportBullsTeamPayRollAndInsertIntoMysql();
 
 //4.IMPORT PLAYERS TO  players_season_pergame
 
-ImportPlayersSeasonStatsAndInsertIntoMysqlDB();
+ImportBullsPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 ?>
