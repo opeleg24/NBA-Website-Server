@@ -1,5 +1,5 @@
 <?php
-//Data is scrapped with a coron job scheduling tasks commend 
+
 include 'simple_html_dom.php';
 //1.import team data
 function ImportThunderTeamDataAndInsertIntoMysql(){
@@ -1348,7 +1348,26 @@ catch(Exception $e) {
 }
 
 
+//27.ImportThunderToDB
 
+//1.Team Data
+//
+ImportThunderTeamDataAndInsertIntoMysql();
+
+//
+//2.Team New Roster
+//
+
+ImportThunderNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+
+ImportThunderTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+
+ImportThunderPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 ?>
