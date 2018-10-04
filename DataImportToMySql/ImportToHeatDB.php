@@ -13,10 +13,7 @@ foreach($html->find('div#info') as $a){
    $teamdata['TEAM NAMES']= substr(strip_tags($a->find('p')[3]->innertext),16);
    $teamdata['PLAYOFF APPERANCES']= substr(strip_tags($a->find('p')[6]->innertext),26);
    $teamdata['CHAMPIONSHIPS']=substr(strip_tags($a->find('p')[7]->innertext),20);
-//   FROM DIFFERENT URL TO GET 2017-18 RECORD
-//   could change the location of li so in that case there will be nothing in RECORD and the other tags 
-//   will be fine, even if a differnt url
-   $htmlTeamDataRecord = file_get_html("https://herosports.com/nba/team/miami-heat");
+//Site where data is scrapped:$html = file_get_html();
    $teamdata['2017-18 RECORD']=substr(strip_tags($htmlTeamDataRecord->find("div ul.team_recorddetail li")[0]->innertext),8);
         
 
