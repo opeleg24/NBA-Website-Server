@@ -1347,7 +1347,26 @@ catch(Exception $e) {
 	
 }
 
+//8.ImportHawksToDB
 
+//1.Team Data
+//
+ImportHawksTeamDataAndInsertIntoMysql();
+
+//
+//2.Team New Roster
+//
+
+ImportHawksNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+
+ImportHawksTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+
+ImportHawksPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 ?>
