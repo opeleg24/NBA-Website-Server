@@ -1212,7 +1212,26 @@ catch(Exception $e) {
 	
 }
 
+//4.ImportToCavsDB
 
+//1.Team Data
+//
+ImportCavsTeamDataAndInsertIntoMysql();
+usleep(mt_rand(15000000,25000000));
+//
+//2.Team New Roster
+//
+usleep(mt_rand(15000000,25000000));
+ImportCavsNewTeamRosterAndInsertIntoMysql();
+//
+//3.Team PayRoll
+//
+usleep(mt_rand(15000000,25000000));
+ImportCavsTeamPayRollAndInsertIntoMysql();
+
+//4.IMPORT PLAYERS TO  players_season_pergame
+usleep(mt_rand(15000000,25000000));
+ImportCavsPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 
