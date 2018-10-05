@@ -1165,7 +1165,7 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
-function ImportHawksPlayersSeasonStatsAndInsertIntoMysqlDB(){
+function ImportHeatPlayersSeasonStatsAndInsertIntoMysqlDB(){
 	
 	ImportBamAdebayoSeasonStatsAndInsertIntoMysql();
 	usleep(mt_rand(15000000,25000000));
@@ -1202,22 +1202,22 @@ ImportJustiseWinslowSeasonStatsAndInsertIntoMysql();
 
 //1.Team Data
 //
-ImportHawksTeamDataAndInsertIntoMysql();
+ImportHeatTeamDataAndInsertIntoMysql();
 
 //
 //2.Team New Roster
 //
 
-ImportHawksNewTeamRosterAndInsertIntoMysql();
+ImportHeatNewTeamRosterAndInsertIntoMysql();
 //
 //3.Team PayRoll
 //
 
-ImportHawksTeamPayRollAndInsertIntoMysql();
+ImportHeatTeamPayRollAndInsertIntoMysql();
 
 //4.IMPORT PLAYERS TO  players_season_pergame
 
-ImportHawksPlayersSeasonStatsAndInsertIntoMysqlDB();
+ImportHeatPlayersSeasonStatsAndInsertIntoMysqlDB();
 
 
 
