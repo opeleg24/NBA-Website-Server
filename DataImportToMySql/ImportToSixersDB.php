@@ -167,7 +167,7 @@ foreach($ArrayNewPayRoll as $ArrayNewPayRollRow){
 }
 }
 
-//4.IMPORT  TEAM PLAYERS!
+//4.Import PLAYERS to a ALL NBA Players table.
 
 function ImportBenSimmonsSeasonStatsAndInsertIntoMysql(){
 
