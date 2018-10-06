@@ -166,7 +166,7 @@ foreach($ArrayNewPayRoll as $ArrayNewPayRollRow){
     echo $e->getMessage();
 }
 }
-//4.IMPORT  TEAM PLAYERS!
+//4.Import PLAYERS to a ALL NBA Players table.
 
 function ImportAlex_AbrinesSeasonStatsAndInsertIntoMysql(){
 
