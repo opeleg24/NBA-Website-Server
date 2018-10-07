@@ -1442,7 +1442,7 @@ foreach($ArrayNewRoster as $row){
     echo $e->getMessage();
 }
 }
-function ImportRocketsPlayersSeasonStatsAndInsertIntoMysqlDB(){
+function ImportSixersPlayersSeasonStatsAndInsertIntoMysqlDB(){
 	
 
 	try {
