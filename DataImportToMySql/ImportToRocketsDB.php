@@ -1244,7 +1244,7 @@ function ImportRocketsPlayersSeasonStatsAndInsertIntoMysqlDB(){
 
 ImportBobbybrownSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
-ImportChris_PaulSeasonStatsAndInsertIntoMysql();
+ImportChrisPaulSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
 ImportJamesHardenSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
@@ -1254,7 +1254,7 @@ ImportbrandanwrightSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
 ImportclintcapelaSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
-Importeric_gordonSeasonStatsAndInsertIntoMysql();
+ImportericgordonSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
 ImportjoejohnsonSeasonStatsAndInsertIntoMysql();
 usleep(mt_rand(15000000,25000000));
