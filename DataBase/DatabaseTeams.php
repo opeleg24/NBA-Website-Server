@@ -1,5 +1,5 @@
 <?php
-    echo "DatabaseTeams01.php";
+    echo "DatabaseTeams02.php";
     final class DatabaseTeams  {
 
     private static $instance = NULL;
