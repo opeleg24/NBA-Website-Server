@@ -1,5 +1,6 @@
 <?php
     echo "New-0001.php";
+    echo "New-0002.php";
     final class DatabaseTeams  {
 
     private static $instance = NULL;
